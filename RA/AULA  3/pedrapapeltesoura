@@ -1,0 +1,14 @@
+pedra=1
+papel=2
+tesoura=3
+jog1=float(input("Jogador 1, escolha: 1 para pedra, 2 para papel ou 3 para tesoura: "))
+jog2=float(input("Jogador 2, escolha: 1 para pedra, 2 para papel ou 3 para tesoura: "))
+if jog1==jog2:
+    print("Empate!")
+elif jog1==pedra and jog2==tesoura:
+    print("Jogador 1 venceu!")
+elif jog1==papel and jog2==pedra:
+    print("Jogador 1 venceu!")
+elif jog1==tesoura and jog2==papel:
+    print("Jogador 1 venceu!")
+else:    print("Jogador 2 venceu!")
